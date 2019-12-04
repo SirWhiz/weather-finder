@@ -1,22 +1,148 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.base {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: #22c1c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  width:80%;
+  height: 80%;
+  background: #fff;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.titles {
+  text-align: center;
+  width: 40%;
+  background: url('./img/bg.jpg') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+}
+
+.title-container {
+  width:100%;
+}
+
+.form {
+  text-align: center;
+  width: 60%;
+  display: flex;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.results {
+  margin-top: 2em;
+  font-family: 'Merriweather', serif;
+}
+
+.form-container form {
+  width: 100%;
+}
+
+.base-results {
+  padding-left: 4em;
+  padding-right: 2em;
+  text-align: left;
+}
+
+.cityName {
+  font-size: 35px;
+  font-family: 'Merriweather', serif;
+}
+
+input {
+  padding: 10px;
+  display: inline-block;
+  margin-right: 1em;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 30%;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Merriweather', serif;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Merriweather', serif;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Merriweather', serif;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Merriweather', serif;
+}
+
+button {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #22c1c3;
+  font-family: 'Merriweather', serif;
+  color: #22c1c3;
+  padding: 10px;
+  cursor: pointer;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+button:hover{
+  color:#fff;
+  background: #22c1c3;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    width:90%;
+    height: 90%;
+  }
+
+  .titles {
+    width: 100%;
+    height: 30%;
+    font-size: 15px;
+  }
+
+  .form {
+    width: 100%;
+    height: 70%;
+  }
+
+  .form-container {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  input{
+    display: block;
+    width: 90%;
+    margin-bottom: 2.5em;
+  }
+
+  button {
+    width: 40%;
+  }
 }

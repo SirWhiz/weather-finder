@@ -3,7 +3,7 @@ Wheather Finder is a ReactJS web appplication that tells you the current weather
 
 ## Live demo:
 
-[Click here](https://sirwhiz.github.io/TwitchTV-pro-dashboard/#/) to see a live demo of the project
+[Click here](https://sirwhiz.github.io/weather-finder/) to see a live demo of the project
 
 ## Installation
 

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/weather-finder/static/css/main.3eb8bf07.chunk.css",
-    "main.js": "/weather-finder/static/js/main.b4f57796.chunk.js",
-    "main.js.map": "/weather-finder/static/js/main.b4f57796.chunk.js.map",
+    "main.js": "/weather-finder/static/js/main.295c9fdf.chunk.js",
+    "main.js.map": "/weather-finder/static/js/main.295c9fdf.chunk.js.map",
     "runtime-main.js": "/weather-finder/static/js/runtime-main.82e2479d.js",
     "runtime-main.js.map": "/weather-finder/static/js/runtime-main.82e2479d.js.map",
     "static/js/2.b7d10189.chunk.js": "/weather-finder/static/js/2.b7d10189.chunk.js",
     "static/js/2.b7d10189.chunk.js.map": "/weather-finder/static/js/2.b7d10189.chunk.js.map",
     "index.html": "/weather-finder/index.html",
-    "precache-manifest.6548e579024576ad3c8786afdee31a6f.js": "/weather-finder/precache-manifest.6548e579024576ad3c8786afdee31a6f.js",
+    "precache-manifest.9d6221e56a95e7a0488e5a13b6c58ecf.js": "/weather-finder/precache-manifest.9d6221e56a95e7a0488e5a13b6c58ecf.js",
     "service-worker.js": "/weather-finder/service-worker.js",
     "static/css/main.3eb8bf07.chunk.css.map": "/weather-finder/static/css/main.3eb8bf07.chunk.css.map",
     "static/media/App.css": "/weather-finder/static/media/bg.eea55f81.jpg"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.82e2479d.js",
     "static/js/2.b7d10189.chunk.js",
     "static/css/main.3eb8bf07.chunk.css",
-    "static/js/main.b4f57796.chunk.js"
+    "static/js/main.295c9fdf.chunk.js"
   ]
 }

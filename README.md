@@ -17,8 +17,8 @@ And then just start the local React server by typing:
 
 ## Screenshots:
 
-![weather-finder-sample](screenshots/weather-finder-1.png)
-![weather-finder-results](screenshots/weather-finder-2.png)
+![weather-finder-sample](screenshots/weather-finder-1.PNG)
+![weather-finder-results](screenshots/weather-finder-2.PNG)
 
 ## Technology Stack
 This project was built using ReactJS

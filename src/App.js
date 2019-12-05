@@ -24,17 +24,28 @@ class App extends React.Component {
 
     const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${API_KEY}&units=metric`);
     const data = await api_call.json();
-    
+
     if(city && country) {
-      var capitalizedDescription = data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1);
-      this.setState({
-        temperature: data.main.temp,
-        city: data.name,
-        country: data.sys.country,
-        humidity: data.main.humidity,
-        description: capitalizedDescription,
-        error: ""
-      });
+      if(data.cod === "404"){
+        this.setState({
+          temperature: undefined,
+          city: undefined,
+          country: undefined,
+          humidity: undefined,
+          description: undefined,
+          error: "We could not find the given city in the given country, please try again"
+        });
+      }else{
+        var capitalizedDescription = data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1);
+        this.setState({
+          temperature: data.main.temp,
+          city: data.name,
+          country: data.sys.country,
+          humidity: data.main.humidity,
+          description: capitalizedDescription,
+          error: ""
+        });
+      }
     }else{
       this.setState({
         temperature: undefined,
@@ -45,6 +56,7 @@ class App extends React.Component {
         error: "Please fill the values"
       });
     }
+
   }
   
   render(){
